@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <link href="https://file.myfontastic.com/Rd2sYSmaRVsUhobfY3X6hS/icons.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="document">
+        <div id="document-body">
+            <h1 contenteditable="true"></h1>
+        </div>
+        <div class="toolbar">
+            <button data-toggle="collapsed"  class="btn icon-plus"></button>
+            <div class="btn-group">
+                <button data-tag="p"  class="btn icon-paragraph"></button>
+                <button data-tag="h1" class="btn icon-header">1</button>
+                <button data-tag="h2" class="btn icon-header">2</button>
+                <button data-tag="h3" class="btn icon-header">3</button>
+                <button data-tag="h4" class="btn icon-header">4</button>
+            </div>
+            
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
