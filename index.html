@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://file.myfontastic.com/Rd2sYSmaRVsUhobfY3X6hS/icons.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://file.myfontastic.com/Rd2sYSmaRVsUhobfY3X6hS/icons.css" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Document</title>
 </head>
 <body>
     <div id="document">
+      <div data-desable class="propbar" id="propbar">
+        <button data-state="false" data-command="bold" class="btn icon-bold"></button>
+        <button data-state="false" data-command="italic" class="btn icon-italic"></button>
+        <button data-state="false" data-command="underline" class="btn icon-underline"></button>
+        <button data-state="false" data-command="strike" class="btn icon-strikethrough"></button>
+      </div>
         <div id="document-body">
-            <h1 contenteditable="true"></h1>
         </div>
         <div class="toolbar">
             <button data-toggle="false"  class="btn icon-plus"></button>
