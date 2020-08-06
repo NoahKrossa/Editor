@@ -32,6 +32,9 @@ body {
 .btn-group {
     margin-left: 5px;
 }
+button[data-toggle="false"] ~ .btn-group {
+  display: none;
+}
 
 // TOOLBAR
 .toolbar {
