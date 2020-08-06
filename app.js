@@ -8,19 +8,18 @@ const insertNode = (tagname) => {
   node.addEventListener("keydown", (e) => {
     if (e.code === "Backspace" && node.textContent.trim() === "")
       doc.removeChild(node);
-      if (e.code === "Enter"){
-        return e.preventDefault()
-      }
+    if (e.code === "Enter") {
+      return e.preventDefault();
+    }
   });
   doc.appendChild(node);
-  buttonToggle.dataset.toggle = 'false'
+  buttonToggle.dataset.toggle = "false";
 };
 
 buttonToggle.addEventListener("click", (e) => {
-
-  if(buttonToggle.dataset.toggle ==='false') buttonToggle.dataset.toggle = 'true'
-  else buttonToggle.dataset.toggle = 'false'
-
+  if (buttonToggle.dataset.toggle === "false")
+    buttonToggle.dataset.toggle = "true";
+  else buttonToggle.dataset.toggle = "false";
 });
 
 // APP ENTRY
@@ -31,4 +30,5 @@ const main = () => {
     });
   });
 };
+
 window.addEventListener("load", main);
