@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://file.myfontastic.com/Rd2sYSmaRVsUhobfY3X6hS/icons.css" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="document">
       <div data-desable class="propbar" id="propbar">
-        <button data-state="false" data-command="bold" class="btn icon-bold"></button>
-        <button data-state="false" data-command="italic" class="btn icon-italic"></button>
-        <button data-state="false" data-command="underline" class="btn icon-underline"></button>
-        <button data-state="false" data-command="strike" class="btn icon-strikethrough"></button>
+        <button
+          data-state="false"
+          data-command="bold"
+          class="btn icon-bold"
+        ></button>
+        <button
+          data-state="false"
+          data-command="italic"
+          class="btn icon-italic"
+        >Italic</button>
+        <button
+          data-state="false"
+          data-command="underline"
+          class="btn icon-underline"
+        ></button>
+        <button
+          data-state="false"
+          data-command="strike"
+          class="btn icon-strikethrough"
+        ></button>
       </div>
-        <div id="document-body">
+      <div id="document-body"></div>
+      <div class="toolbar">
+        <button data-toggle="false" class="btn icon-plus">+</button>
+        <div class="btn-group">
+          <button data-tag="p" class="btn icon-paragraph">P</button>
+          <button data-tag="h1" class="btn icon-header">H1</button>
+          <button data-tag="h2" class="btn icon-header">H2</button>
+          <button data-tag="h3" class="btn icon-header">H3</button>
+          <button data-tag="h4" class="btn icon-header">H4</button>
         </div>
-        <div class="toolbar">
-            <button data-toggle="false"  class="btn icon-plus"></button>
-            <div class="btn-group">
-                <button data-tag="p"  class="btn icon-paragraph"></button>
-                <button data-tag="h1" class="btn icon-header">1</button>
-                <button data-tag="h2" class="btn icon-header">2</button>
-                <button data-tag="h3" class="btn icon-header">3</button>
-                <button data-tag="h4" class="btn icon-header">4</button>
-            </div>
-            
-        </div>
+      </div>
     </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
