@@ -6,8 +6,9 @@
 
     &[contenteditable="true"] {
         padding: 10px;
-        border: .5px solid #b1b1b1;
         outline: none;
+        margin-bottom: 10px;
+        background-color: whitesmoke;
     }
 
 }
@@ -32,9 +33,9 @@ body {
 .btn-group {
     margin-left: 5px;
 }
-// button[data-toggle="false"] ~ .btn-group {
-//   display: none;
-// }
+button[data-toggle="false"] ~ .btn-group {
+  display: none;
+}
 // button[data-state="true"] {
 //   background-color: #6d6d6d;
 //   color: white;
