@@ -1,0 +1,1 @@
+This is a simple text editor inspired in LinkedIn editor, made in Javascript vanilla
